@@ -4,7 +4,7 @@ Simple Flutter app that shows the most popular movies and their details.
 
 Demo: 
 
-![Watch Youtube Demo Video](https://youtu.be/t7qwzTjDMuM)
+[Watch Youtube Demo Video](https://youtu.be/t7qwzTjDMuM)
 
 Apk file URL:
 
