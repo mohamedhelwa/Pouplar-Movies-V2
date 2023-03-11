@@ -1,0 +1,28 @@
+{
+  "home": "الرئيسية",
+  "bookmarks": "المفضلة",
+  "settings": "الإعدادات",
+  "search": "بحث",
+  "areYouSureYouWantToExit": "هل أنت متأكد من أنك تريد الخروج؟",
+  "exit": "خروج",
+  "confirm": "تأكيد",
+  "cancel": "إلغاء",
+  "dismiss": "تجاهل",
+  "errorOccurredInGettingMoviesData": "حدث خطأ أثناء الحصول علي بيانات الأفلام",
+  "noMoviesAvailable": "لا توجد أفلام متاحة",
+  "noMoviesMatchedYourSearch": "لا توجد أفلام تطابق بحثك",
+  "noDataAvailable": "لا توجد بيانات متاحة",
+  "somethingWentWrong": "حدث خطأ ما",
+  "tryAgain": "حاول مرة أخري",
+  "sortByVoteCount": "ترتيب حسب عدد الأصوات",
+  "voteAverageLessThan6": "متوسط الأصوات أقل من (6)؟",
+  "changeLanguage": "تغيير اللغة",
+  "languageChangedSuccessfully": "تم تغيير اللغة بنجاح",
+  "thisLanguageIsAlreadySelected": "هذه اللغة محددة بالفعل",
+  "arabic": "العربية",
+  "english": "English",
+  "noBookmarksMoviesTillNow": "لا توجد أفلام مفضلة حتي الآن",
+  "releaseDate": "تاريخ الإصدار"
+
+}
+

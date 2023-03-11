@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>485718704429-qqh25r90orph4t6c2lmjua4npcr72o0k.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.485718704429-qqh25r90orph4t6c2lmjua4npcr72o0k</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>485718704429-3cbgpfoc6787rvuv1n32808rivcve8f7.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCdeL6zadNJEi8RdV8pipJNxoGBH2pJlT4</string>
+	<key>GCM_SENDER_ID</key>
+	<string>485718704429</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>me.smartlink.ora</string>
+	<key>PROJECT_ID</key>
+	<string>oraflutter-83278</string>
+	<key>STORAGE_BUCKET</key>
+	<string>oraflutter-83278.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:485718704429:ios:fbd485254239adffc793a4</string>
+</dict>
+</plist>
