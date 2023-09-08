@@ -12,8 +12,14 @@ class _HomeState extends State<Home> with TickerProviderStateMixin {
 
   @override
   void initState() {
-    homeData.getPopularMovies(context, refresh: false);
-    homeData.getPopularMovies(context);
+    homeData.moviesPagingController.addPageRequestListener((pageKey) {
+      homeData.fetchNowPlayingMoviesList(context, pageKey);
+    });
+
+    homeData.searchableMoviesPagingController.addPageRequestListener((pageKey) {
+      homeData.currentSearchPageKeyCubit.onUpdateData(pageKey);
+    });
+
     super.initState();
   }
 
@@ -22,7 +28,7 @@ class _HomeState extends State<Home> with TickerProviderStateMixin {
     return WillPopScope(
       onWillPop: () => Utils.handleBackPress(context),
       child: DefaultTabController(
-        length: 3,
+        length: 2,
         initialIndex: 0,
         child: Scaffold(
           backgroundColor: MyColors.white,

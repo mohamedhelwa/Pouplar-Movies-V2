@@ -30,6 +30,8 @@ dependencies:
   flutter_easyloading: ^3.0.5
   lottie: ^2.2.0
   swipe_refresh: ^1.0.2
+  infinite_scroll_pagination: ^3.2.0
+
 
 
 dev_dependencies:

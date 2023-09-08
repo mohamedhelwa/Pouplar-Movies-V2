@@ -1,6 +1,5 @@
 {
   "home": "الرئيسية",
-  "bookmarks": "المفضلة",
   "settings": "الإعدادات",
   "search": "بحث",
   "areYouSureYouWantToExit": "هل أنت متأكد من أنك تريد الخروج؟",
@@ -14,15 +13,14 @@
   "noDataAvailable": "لا توجد بيانات متاحة",
   "somethingWentWrong": "حدث خطأ ما",
   "tryAgain": "حاول مرة أخري",
-  "sortByVoteCount": "ترتيب حسب عدد الأصوات",
-  "voteAverageLessThan6": "متوسط الأصوات أقل من (6)؟",
   "changeLanguage": "تغيير اللغة",
   "languageChangedSuccessfully": "تم تغيير اللغة بنجاح",
   "thisLanguageIsAlreadySelected": "هذه اللغة محددة بالفعل",
   "arabic": "العربية",
   "english": "English",
-  "noBookmarksMoviesTillNow": "لا توجد أفلام مفضلة حتي الآن",
-  "releaseDate": "تاريخ الإصدار"
+  "releaseDate": "تاريخ الإصدار",
+  "pleaseEnterMovieName": "من فضلك أدخل اسم الفيلم",
+  "nowPlaying": "الأفلام الحالية"
 
 }
 

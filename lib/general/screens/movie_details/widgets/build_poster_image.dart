@@ -10,10 +10,6 @@ class BuildPosterImage extends StatelessWidget {
       url: imageUrl,
       bgColor: MyColors.white,
       height: MediaQuery.of(context).size.height * 0.5,
-      borderRadius: const BorderRadius.only(
-        topLeft: Radius.circular(10),
-        topRight: Radius.circular(10),
-      ),
       placeHolder: const NetworkImagePlaceholder(),
     );
   }

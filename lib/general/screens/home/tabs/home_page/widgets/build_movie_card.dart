@@ -2,13 +2,8 @@ part of 'home_page_widgets_imports.dart';
 
 class BuildMovieCard extends StatelessWidget {
   final MovieModel model;
-  final Function() bookmarkMovie;
 
-  const BuildMovieCard({
-    Key? key,
-    required this.model,
-    required this.bookmarkMovie,
-  }) : super(key: key);
+  const BuildMovieCard({Key? key, required this.model}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -19,14 +14,14 @@ class BuildMovieCard extends StatelessWidget {
         MovieDetailsRoute(movie: model),
       ),
       alignment: AlignmentDirectional.center,
-      width: screenWidth * .45,
+      width: screenWidth,
       height: screenWidth * .735,
-      margin: const EdgeInsets.all(5),
+      margin: const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Expanded(
-            flex: 2,
+            flex: 3,
             child: Stack(
               children: [
                 CachedImage(
@@ -39,7 +34,8 @@ class BuildMovieCard extends StatelessWidget {
                   placeHolder: const NetworkImagePlaceholder(),
                 ),
                 if (model.voteAverage != null)
-                  BuildRateBanner(rate: "${model.voteAverage!}"),
+                  BuildRateBanner(
+                      rate: "${model.voteAverage?.toStringAsPrecision(2)}"),
               ],
             ),
           ),
@@ -50,25 +46,23 @@ class BuildMovieCard extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  MyText(
-                    title: "${model.title}",
-                    color: MyColors.black,
-                    size: screenWidth <= 350 || WidgetUtils.lang == "ar"
-                        ? 10
-                        : 12,
-                    fontWeight: FontWeight.bold,
-                    maxLines: 3,
-                    overflow: TextOverflow.ellipsis,
-                    letterSpace: WidgetUtils.lang == "ar" ? 0 : 1,
-                  ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      BuildVoteCount(voteCount: "${model.voteCount}"),
-                      BuildBookmarkButton(
-                        model: model,
-                        bookmarkMovie: bookmarkMovie,
+                      Flexible(
+                        child: MyText(
+                          title: "${model.title}",
+                          color: MyColors.black,
+                          size: screenWidth <= 350 || WidgetUtils.lang == "ar"
+                              ? 12
+                              : 14,
+                          fontWeight: FontWeight.bold,
+                          maxLines: 3,
+                          overflow: TextOverflow.ellipsis,
+                          letterSpace: WidgetUtils.lang == "ar" ? 0 : 1,
+                        ),
                       ),
+                      BuildVoteCount(voteCount: "${model.voteCount}"),
                     ],
                   ),
                 ],

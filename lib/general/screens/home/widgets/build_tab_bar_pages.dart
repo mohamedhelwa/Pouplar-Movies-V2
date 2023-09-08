@@ -12,7 +12,6 @@ class BuildTabBarPages extends StatelessWidget {
       builder: (context, state) {
         return [
           HomePage(homeData: homeData),
-          Bookmarks(homeData: homeData),
           const Settings(),
         ][state.data];
       },

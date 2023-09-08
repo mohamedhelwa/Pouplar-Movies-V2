@@ -22,7 +22,12 @@ class BuildBottomTabBar extends StatelessWidget {
         builder: (context, state) {
           return TabBar(
             indicatorColor: Colors.transparent,
-            onTap: (index) => homeData.homeTabBarIndexCubit.onUpdateData(index),
+            onTap: (index) {
+              homeData.homeTabBarIndexCubit.onUpdateData(index);
+              if (index == 0) {
+                homeData.moviesPagingController.refresh();
+              }
+            },
             enableFeedback: false,
             overlayColor: MaterialStateProperty.all(Colors.transparent),
             tabs: [
@@ -33,16 +38,9 @@ class BuildBottomTabBar extends StatelessWidget {
               ),
               BuildTabItem(
                 isSelected: state.data == 1,
-                title: tr(context, "bookmarks"),
-                icon: state.data == 1
-                    ? Icons.bookmark_added
-                    : Icons.bookmark_added_outlined,
-              ),
-              BuildTabItem(
-                isSelected: state.data == 2,
                 title: tr(context, "settings"),
                 icon:
-                    state.data == 2 ? Icons.settings : Icons.settings_outlined,
+                    state.data == 1 ? Icons.settings : Icons.settings_outlined,
               ),
             ],
           );

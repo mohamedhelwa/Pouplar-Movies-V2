@@ -12,18 +12,15 @@ class _MovieDetailsState extends State<MovieDetails> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: DefaultAppBar(
-        backButtonColor: MyColors.white,
-        backgroundColor: Colors.transparent,
-      ),
-      extendBodyBehindAppBar: true,
-      body: Column(
-        children: [
-          BuildPosterImage(
-            imageUrl: "${ApiNames.imageBaseUrl}${widget.movie.posterPath}",
-          ),
-          Expanded(
-            child: SingleChildScrollView(
+      appBar: DefaultAppBar(title: widget.movie.title),
+      body: SingleChildScrollView(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            BuildPosterImage(
+              imageUrl: "${ApiNames.imageBaseUrl}${widget.movie.posterPath}",
+            ),
+            Padding(
               padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 20),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -43,8 +40,8 @@ class _MovieDetailsState extends State<MovieDetails> {
                 ],
               ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }

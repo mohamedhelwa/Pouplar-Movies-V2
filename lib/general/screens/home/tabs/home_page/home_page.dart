@@ -9,21 +9,18 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  final HomePageData homePageData = HomePageData();
-
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () => FocusScope.of(context).unfocus(),
       child: Scaffold(
-        appBar: const DefaultAppBar(
-          title: 'Popular Movies',
+        appBar: DefaultAppBar(
+          title: tr(context, "nowPlaying"),
           showBackButton: false,
         ),
         body: Column(
           children: [
             BuildSearchArea(homeData: widget.homeData),
-            BuildFiltersArea(homeData: widget.homeData),
             BuildMoviesList(homeData: widget.homeData),
           ],
         ),

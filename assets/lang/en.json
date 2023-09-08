@@ -1,6 +1,6 @@
 {
   "home": "Home",
-  "bookmarks": "Bookmarks",
+
   "settings": "Settings",
   "search": "Search",
   "areYouSureYouWantToExit": "Are you sure you want to exit?",
@@ -14,15 +14,14 @@
   "noDataAvailable": "No data available",
   "somethingWentWrong": "Something went wrong",
   "tryAgain": "Try again",
-  "sortByVoteCount": "Sort by vote count",
-  "voteAverageLessThan6": "Vote avg. less than (6)?",
   "changeLanguage": "Change language",
   "languageChangedSuccessfully": "Language changed successfully",
   "thisLanguageIsAlreadySelected": "This language is already selected",
   "arabic": "العربية",
   "english": "English",
-  "noBookmarksMoviesTillNow": "No bookmarks movies till now",
-  "releaseDate": "Release date"
+  "releaseDate": "Release date",
+  "pleaseEnterMovieName": "Please enter movie name",
+  "nowPlaying": "Now playing"
 }
 
 

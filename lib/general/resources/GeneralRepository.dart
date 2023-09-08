@@ -8,6 +8,9 @@ class GeneralRepository {
     _generalHttpMethods = GeneralHttpMethods(_context);
   }
 
-  Future<List<MovieModel>> getPopularMovies(bool refresh) async =>
-      _generalHttpMethods.getPopularMovies(refresh);
+  Future<List<MovieModel>> getPlayingNowMovies(int page) async =>
+      _generalHttpMethods.getPlayingNowMovies(page);
+
+  Future<List<MovieModel>> searchForMovie(String query, int page) async =>
+      _generalHttpMethods.searchForMovie(query, page);
 }
